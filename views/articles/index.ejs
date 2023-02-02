@@ -1,0 +1,20 @@
+<html>
+	<head>
+		<title>Articles | All</title>
+	</head>
+	<body>
+		<a href="/articles/create">Create</a>
+		<table border="1">
+			<tr>
+				<th>Title</th>
+				<th>Body</th>
+			</tr>
+			<% articles.forEach(i => { %>
+				<tr>
+				<td><h1><%= i.title %></h1></td>
+				<td><p><%= i.body %></p></td>
+				</tr>
+			<% }) %>
+		</table>
+	</body>
+</html>
